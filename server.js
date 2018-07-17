@@ -21,7 +21,7 @@ app.get('*', async (req, res) => {
     })
 
 
-    let context = { url: req.url }// context.renderStyles() 如何来的。
+    let context = { url: req.url }// context 传给 entry-server.js
     //console.log(context)
 
     // 这里无需传入一个应用程序，因为在执行 bundle 时已经自动创建过。现在我们的服务器与应用程序已经解耦！
